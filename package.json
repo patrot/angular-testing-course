@@ -14,6 +14,7 @@
     "build:prod": "ng build --prod",
     "start:prod": "http-server ./dist -a localhost -p 4200",
     "build-and-start:prod": "run-s build:prod start:prod",
+    "build_and-deploy:prod": "run-s build:prod start:prod",
     "e2e": "start-server-and-test build-and-start:prod http://localhost:4200 cypress:run"
   },
   "private": true,
@@ -31,7 +32,7 @@
     "@angular/router": "10.0.2",
     "body-parser": "^1.18.3",
     "core-js": "^2.4.1",
-    "cypress": "^3.2.0",
+    "cypress": "^3.8.3",
     "express": "^4.16.2",
     "http-server": "^0.12.1",
     "moment": "^2.22.2",
